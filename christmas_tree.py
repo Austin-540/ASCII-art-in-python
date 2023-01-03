@@ -1,4 +1,23 @@
+"""
+          ★
+         ---
+        .* ++
+       -------
+      *'+* -***
+     -----------
+    **(*** .+*%*)
+   ---------------
+  *+..*'** %$#**/**
+ -------------------
+'****&$**( +**'#,)*,!
+        █████
+        █████""" 
+#recommended height is 10
+
+
 import random as rn
+random_char_min = 33
+random_char_max = 47
 
 height = int(input('Enter height : '))
 
@@ -19,7 +38,7 @@ for row in range(height):
     else: print('-', end='')
     
     for _ in range(row+1):  
-        if row%2 == 1: print(rn.choice(['*', chr(rn.randint(33,47))]), end='')
+        if row%2 == 1: print(rn.choice(['*', chr(rn.randint(random_char_min,random_char_max))]), end='')
         else: print('-', end='')
     print()
 
